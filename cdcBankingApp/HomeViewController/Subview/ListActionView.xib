@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListActionView" customModule="cdcBankingApp" customModuleProvider="target">
+            <connections>
+                <outletCollection property="listActionView" destination="pne-WW-GF0" collectionClass="NSMutableArray" id="TdE-Rh-Occ"/>
+                <outletCollection property="listActionView" destination="jxS-sF-2Zg" collectionClass="NSMutableArray" id="use-Lq-XIO"/>
+                <outletCollection property="listActionView" destination="OM4-dY-0WI" collectionClass="NSMutableArray" id="z37-fm-DgJ"/>
+                <outletCollection property="listActionView" destination="8BS-0Y-yrz" collectionClass="NSMutableArray" id="ICe-Bt-1SQ"/>
+                <outletCollection property="listActionView" destination="BM4-TL-KEB" collectionClass="NSMutableArray" id="Owx-aM-CzI"/>
+                <outletCollection property="listActionView" destination="MID-v2-jAx" collectionClass="NSMutableArray" id="wSV-D2-beN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="233"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zjf-Gw-E5T">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="192"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aVY-4D-I3X">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pne-WW-GF0" customClass="ActionItem" customModule="cdcBankingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="131" height="96"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="96" id="Sja-9b-iJH"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxS-sF-2Zg" customClass="ActionItem" customModule="cdcBankingApp" customModuleProvider="target">
+                                    <rect key="frame" x="131" y="0.0" width="131" height="96"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="96" id="9yW-ra-j1a"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OM4-dY-0WI" customClass="ActionItem" customModule="cdcBankingApp" customModuleProvider="target">
+                                    <rect key="frame" x="262" y="0.0" width="131" height="96"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="96" id="aOM-h9-ILk"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ITv-Xh-MfN">
+                            <rect key="frame" x="0.0" y="96" width="393" height="96"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8BS-0Y-yrz" customClass="ActionItem" customModule="cdcBankingApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="131" height="96"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="96" id="QqV-WJ-2WH"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BM4-TL-KEB" customClass="ActionItem" customModule="cdcBankingApp" customModuleProvider="target">
+                                    <rect key="frame" x="131" y="0.0" width="131" height="96"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="96" id="hp1-35-4ae"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MID-v2-jAx" customClass="ActionItem" customModule="cdcBankingApp" customModuleProvider="target">
+                                    <rect key="frame" x="262" y="0.0" width="131" height="96"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="96" id="BSC-mV-JPY"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Zjf-Gw-E5T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="700-8Q-ljb"/>
+                <constraint firstItem="Zjf-Gw-E5T" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AhF-yf-oOh"/>
+                <constraint firstAttribute="bottom" secondItem="Zjf-Gw-E5T" secondAttribute="bottom" priority="999" id="Ksu-PS-tRC"/>
+                <constraint firstAttribute="trailing" secondItem="Zjf-Gw-E5T" secondAttribute="trailing" id="zZe-5k-N9H"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="46.564885496183201" y="-197.53521126760563"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionItem" customModule="cdcBankingApp" customModuleProvider="target">
+            <connections>
+                <outlet property="itemImageView" destination="WqX-KW-6FK" id="uGc-fx-pgm"/>
+                <outlet property="itemLabel" destination="NFS-WL-KXr" id="5IF-5i-2Vs"/>
+                <outlet property="topPaddingContraint" destination="JP7-HU-AM3" id="eJk-Od-TUL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="108" height="115"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WqX-KW-6FK">
+                    <rect key="frame" x="26" y="8" width="56" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="56" id="F2O-i7-C3a"/>
+                        <constraint firstAttribute="height" constant="56" id="sel-fZ-rej"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFS-WL-KXr">
+                    <rect key="frame" x="33" y="64" width="42" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="vUI-8B-n7l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="NFS-WL-KXr" firstAttribute="top" secondItem="WqX-KW-6FK" secondAttribute="bottom" id="BwN-eE-Znw"/>
+                <constraint firstItem="WqX-KW-6FK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="JP7-HU-AM3"/>
+                <constraint firstItem="NFS-WL-KXr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="R90-8B-tGj"/>
+                <constraint firstItem="WqX-KW-6FK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bFZ-wQ-gcg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-233.58778625954199" y="-239.78873239436621"/>
+        </view>
+    </objects>
+</document>
